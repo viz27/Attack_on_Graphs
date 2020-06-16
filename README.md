@@ -2,7 +2,7 @@
 
 Project analyzing effectiveness of adversarial attack methods on Graph Neural Networks and defense methods. Two papers are currently considered in this project. [Nettatack](https://arxiv.org/abs/1805.07984) and [GCNJaccard](https://arxiv.org/abs/1903.01610). All experiments are performed with implementations of these methods available at [Deeprobust](https://github.com/DSE-MSU/DeepRobust)- which is a pytorch adversarial library for attack and defense methods on images and graphs.
 
-## Experiment 1 - Effect on Jaccard Similarity threshold on overall GCN accuracy
+## Experiment 1 - Effect of Jaccard Similarity threshold on overall GCN accuracy
 ### Citeseer
 | Threshold       | Edges Removed | Accuracy |
 |-------|-------|-------|
