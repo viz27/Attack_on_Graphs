@@ -17,7 +17,7 @@ cd Attack_on_Graphs
 ## Experiment 1 - Jaccard score threshold’s impact on clean graph while running GCNJaccard
 Run as given below, specifying the dataset and Jaccar Score Threshold.
 ```
-python3 GCN_vs_GCNJaccar.py --dataset cora --threshold 0.01
+python GCN_vs_GCNJaccar.py --dataset cora --threshold 0.01
 ```
 | Threshold       | Edges Removed(Citeseer) | Accuracy(Citeseer) | Edges Removed(Cora) | Accuracy(Cora) |
 |-------|-------|-------|-------|-------|
@@ -32,3 +32,18 @@ python3 GCN_vs_GCNJaccar.py --dataset cora --threshold 0.01
 | 0.08 | 1912 | 0.6991 | 2692 | 0.7339
 | 0.09 | 2121 | 0.6985 | 3032 | 0.7208
 | 0.10 | 2284 | 0.6949 | 3253 | 0.7133
+
+## Experiment 2 - Effectiveness of NETTACK and GCNJaccard(Against NETTACK)
+Run as given below, specifying the dataset and Jaccar Score Threshold.
+```
+python nettack_and_defense.py --dataset cora --threshold 0.04
+```
+| Method | Accuracy(Citeseer) | Accuracy(Cora) |
+|-------|-------|-------|
+NETTACK |	0.1 | ***0.15***
+GCNJaccard(0.01) | 0.3 | 0.3
+GCNJaccard(0.02) | 0.525 | 0.3
+GCNJaccard(0.03) | 0.675 | 0.4
+GCNJaccard(0.04) | ***0.7*** | 0.45
+GCNJaccard(0.05) | 0.65 | *0.55*
+GCNJaccard(0.06) | 0.775 | 0.625
