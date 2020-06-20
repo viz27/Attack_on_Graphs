@@ -46,4 +46,4 @@ GCNJaccard(0.02) | 0.525 | 0.3
 GCNJaccard(0.03) | 0.675 | 0.4
 GCNJaccard(0.04) | ***0.7*** | 0.45
 GCNJaccard(0.05) | 0.65 | *0.55*
-GCNJaccard(0.06) | 0.775 | 0.625
+GCNJaccard(0.10) | 0.775 | 0.625
